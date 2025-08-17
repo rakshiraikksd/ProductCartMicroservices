@@ -1,0 +1,58 @@
+# Ignore Git folder itself
+.git/
+
+# Visual Studio related
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build output
+bin/
+obj/
+out/
+artifacts/
+
+# Logs
+*.log
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+*.nuget.props
+*.nuget.targets
+
+# Resharper / Rider / JetBrains IDEs
+.idea/
+*.iml
+
+# VS Code settings
+.vscode/
+
+# ASP.NET runtime / publish outputs
+wwwroot/lib/
+wwwroot/dist/
+
+# Angular / Frontend
+node_modules/
+dist/
+build/
+
+# Docker
+*.pid
+*.seed
+*.bak
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.DS_Store
