@@ -8,7 +8,8 @@ services:
     ports:
       - "5000:5000"
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_ENVIRONMENT=Production
+      #- ASPNETCORE_ENVIRONMENT=Development
     depends_on:
       - productservice
       - catalogservice
@@ -23,7 +24,8 @@ services:
     ports:
       - "5001:5001"
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
+          - ASPNETCORE_ENVIRONMENT=Production
+      # - ASPNETCORE_ENVIRONMENT=Development
     networks:
       - microservices-network
 
@@ -34,7 +36,9 @@ services:
     ports:
       - "5002:5002"
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
+       - ASPNETCORE_ENVIRONMENT=Production
+    
+      # - ASPNETCORE_ENVIRONMENT=Development
     networks:
       - microservices-network
 
@@ -45,7 +49,8 @@ services:
     ports:
       - "5003:5003"
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
+           - ASPNETCORE_ENVIRONMENT=Production
+    # - ASPNETCORE_ENVIRONMENT=Development
     networks:
       - microservices-network
 

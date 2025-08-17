@@ -178,4 +178,21 @@ Each service follows the same structure:
 - `appsettings.json` - Configuration
 - `Dockerfile` - Container definition
 
+## 🚀 Running in Docker
+
+By default, Docker uses **Production** (`appsettings.json`).  
+
+To switch environments, edit the `docker-compose.override.yml` file and update the environment section:  
+
+```yaml
+environment:
+  # For Development (uses appsettings.Development.json)
+  - ASPNETCORE_ENVIRONMENT=Development
+  # - ASPNETCORE_ENVIRONMENT=Production
+
+  # For Production (uses appsettings.json)
+  # - ASPNETCORE_ENVIRONMENT=Development
+  - ASPNETCORE_ENVIRONMENT=Production
+
+
 
